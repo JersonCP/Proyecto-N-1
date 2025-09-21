@@ -1,0 +1,90 @@
+// Variables
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #dc3545;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Mixin
+@mixin button-style($bg, $color: #fff) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// Estilos generales
+body {
+  font-family: $font-stack;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+header, footer {
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+// Sección de formulario
+#form-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  button {
+    @include button-style($success-color);
+  }
+}
+
+// Tabla de películas
+#list-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .edit-btn {
+      @include button-style($primary-color);
+      margin-right: 5px;
+    }
+
+    .delete-btn {
+      @include button-style($danger-color);
+    }
+  }
+}
+
+// Responsivo
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}

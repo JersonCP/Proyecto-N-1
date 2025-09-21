@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+header, footer {
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+#form-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form-section button {
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#form-section button:hover {
+  opacity: 0.9;
+}
+
+#list-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#list-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#list-section table th, #list-section table td {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#list-section table .edit-btn {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#list-section table .edit-btn:hover {
+  opacity: 0.9;
+}
+
+#list-section table .delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#list-section table .delete-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
