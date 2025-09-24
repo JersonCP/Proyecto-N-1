@@ -1,8 +1,9 @@
 # Gestor de Películas
 
 ## Integrantes
+- CÓRDOBA QUIPS MARCÓ ANTONIO
 - COAGUILA FLORES JERSON JILMER
-- ROMERO CORNEJO FREDD ANDRE
+- ROMERO CORNEJO FREDD ANDRÉ
 
 ## Descripción
 Aplicación web que permite agregar, listar, editar y eliminar películas usando HTML, CSS y JavaScript.
