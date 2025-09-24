@@ -6,8 +6,8 @@
 - ROMERO CORNEJO FREDD ANDRÉ
 
 ## Descripción
-Aplicación web que permite agregar, listar, editar y eliminar películas usando HTML, CSS y JavaScript.
-Es un proyecto académico que demuestra el uso de formularios, tablas dinámicas y eventos en JavaScript.
+- Es un proyecto académico de primera fase del curso Desarrollo de Aplicaciones en el cual se implementan el uso de formularios, tablas dinámicas y eventos en JavaScript.
+- La Aplicación web que permite agregar, listar, editar y eliminar películas usando HTML, CSS y JavaScript.
 
 ## Tecnologías
 - HTML
